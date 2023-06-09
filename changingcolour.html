@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <div style=" width: 25%;  padding:20px; margin:auto; text-align: center; border: 1px black solid;">
+        <button class="btn g" style="width: 50%; background-color: black; color: aliceblue;" onclick="chG() ">Click to change to Green</button><br><br>
+        <button class="btn r" style="width: 50%; background-color: black; color: aliceblue;" onclick="chR()">Click to change to Red</button><br><br>
+        <button class="btn b" style="width: 50%; background-color: black; color: aliceblue;" onclick="chB()">Click to change to Blue</button><br><br>
+        <button class="btn " style="width: 50%; background-color: black; color: aliceblue;" onclick="reset()">Click to change to Reset</button><br><br>
+
+    </div> 
+    
+    <script>
+        let co = document.getElementsByClassName("g");
+        let lo = document.getElementsByClassName("r");
+        let ur = document.getElementsByClassName("b");
+        let re = document.getElementsByClassName("btn");
+
+        function chG(){
+            for(let i=0; i<=co.length; i++){
+                co[i].style.backgroundColor = "green";
+            }
+        }
+       function chR(){
+            for(i=0; i<=lo.length; i++){
+                lo[i].style.backgroundColor = "red";
+            }
+       }
+        function chB(){
+            for(i=0; i<=ur.length; i++){
+                ur[i].style.backgroundColor = "blue";
+            }
+        }
+        
+        function reset(){
+            for(i=0; i<=re.length; i++){
+                re[i].style.backgroundColor = "black";
+            }
+        }
+        
+
+        // co.addEventListener('click', function onClick(event){
+        //     event.target.style.backgroundColor = 'green';
+        // });
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav{
+    background: rgb(31, 116, 24);
+    display: flex;
+    justify-content: center;
+    padding: 2rem; 
+    /* 1rem=10px */
+    gap: 1rem;
+}
+button{
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    background: rgb(202, 240, 202);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    color: rgb(17, 16, 16);
+}
+button:hover{
+    background: chocolate;
+}
+main{
+    background: rgb(44, 78, 14);
+    padding: 1rem;
+    /* display: flex; */
+    /* gap: 1rem; */
+    flex-wrap: wrap;
+}
+p{
+    color: aliceblue;
+    font-size: 2rem;
+    /* border: 2px chocolate solid; */
+    padding: 3rem;
+    width: 3rem;
+    height: 4rem;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}

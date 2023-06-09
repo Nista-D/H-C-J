@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <label>FirstNum  </label> 
+    <input type="text" class="first"><br><br>
+
+    <label>SecondNum</label>   
+    <input type="text" class="second"><br><br>
+
+    <p id="ans">Result : </p>
+        
+    <button class="btn" onclick="calc()">Calculate</button>
+    
+    <script>
+        // var i = document.getElementById('first').value;
+        var first = document.querySelector('.first');
+        var second = document.querySelector('.second');
+        var result = document.querySelector('#ans');
+        var calculate = document.querySelector('.btn');
+
+        function calc(){
+            one = parseInt(first.value);
+            two = parseInt(second.value);
+            // console.log( result.value =  first + second);
+           result.textContent = one + two;
+            // console.log(result.value);
+        
+
+        }
+        // calculate.addEventListener('click', function(){
+        //    let val = calc();
+        // })
+    </script>
+</body>
+</html>

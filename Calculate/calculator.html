@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+    <table class="form1">
+        <input type="text" name="result" class="calc"><br><br>
+        <tr>
+            <td><input type="button" value="7" onclick="form1.result.value += '7'"> </td>
+            <td><input type="button" value="8" onclick="form1.result.value += '8'"></td>
+            <td><input type="button" value="9" onclick="form1.result.value += '9'"></td>
+            <td><input type="button" value="/" onclick="form1.result.value += '/'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="form1.result.value += '4'"></td>
+            <td><input type="button" value="5" onclick="form1.result.value += '5'"></td>
+            <td><input type="button" value="6" onclick="form1.result.value += '6'"></td>
+            <td><input type="button" value="*" onclick="form1.result.value += '*'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="form1.result.value += '1'"></td>
+            <td><input type="button" value="2" onclick="form1.result.value += '2'"></td>
+            <td><input type="button" value="3" onclick="form1.result.value += '3'"></td>
+            <td><input type="button" value="+" onclick="form1.result.value += '+'"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="form1.result.value += '0'"></td>
+            <td><input type="button" value="%" onclick="form1.result.value += '%'"></td>
+            <td><input type="button" value="-" onclick="form1.result.value += '-'"></td>
+            <td><input type="button" value="=" onclick="eval(form1.result.value)"></td>
+        </tr>
+        <input type="button" value="Clear" onclick="form1.result.value = ''" class="clear">    
+</table>
+</div>
+   
+</body>
+</html>

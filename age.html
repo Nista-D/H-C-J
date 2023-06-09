@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function personAge(){
+            var age = document.getElementById("age").value;
+
+            if(age>0 && age<=12){
+                document.getElementById("myOutput").innerHTML = "You're a Child!"; 
+            }
+            else if (age>=13&&age<=19) {
+                document.getElementById("myOutput").innerHTML = "You're a Teenager!"; 
+
+            } 
+            else if (age>=20&&age<=35) {
+                document.getElementById("myOutput").innerHTML = "You're an Adult!"; 
+
+            }
+            else if (age>=36&&age<=55) {
+                document.getElementById("myOutput").innerHTML = "You're Middle aged!"; 
+            } 
+            else if (age>55){
+                document.getElementById("myOutput").innerHTML = "You're Old!"; 
+            }
+            else{
+                document.getElementById("myOutput").innerHTML = "Invalid!"; 
+            }
+        }
+
+    //     window.addEventListener('load', () => {
+    //     const button = document.querySelector('#clear');
+    //     button.addEventListener('click', () => {
+    //         document.querySelector('#age').value = "";
+    //     });
+    // });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <b>Enter your age : <input type="search" id="age" ></b><br><br>
+    <button type="submit" onclick="personAge()">Click here</button>
+    <output id="myOutput"><br><br>
+    <!-- <button type="reset">&times;</button> -->
+
+</body>
+</html>

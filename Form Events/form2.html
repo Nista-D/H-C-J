@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: pink;
+            display: flex;       
+
+        }
+        .quote{
+            height: 300px;
+            width: 300px;
+            padding: 2rem;
+            margin: 2rem;
+            text-align: justify;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            background: greenyellow;
+            padding: 2rem;
+            margin: 2rem;
+        }
+        .hidden{
+            /* display: none;             */
+            visibility: hidden;
+        }
+        .back{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" onclick="toggle()">TOGGLE</button>
+        <p class="quote">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum deleniti molestiae, dicta mollitia iure vel corrupti? Reprehenderit voluptates, repellat deserunt facere voluptatum unde dolorem doloribus! At consequatur nulla eius alias.</p>    
+
+        <div class="container"></div>
+
+    <script>
+        
+        function toggle()
+        {
+            var p = document.querySelector('.quote');
+            var box = document.querySelector('.container');
+
+            p.addEventListener('click', function(event){
+                event.preventDefault();
+                event.target.className = 'hidden'; 
+                // p.className = '.hidden'; changing classname from quote to hidden
+                
+            });
+            // hidden.classList.toggle('paragraphClass');
+
+            box.addEventListener('click', function(event){
+                event.preventDefault();
+                event.target.className = 'back';
+            });
+
+        }
+        
+        // function toggle(){
+        //     if(hidden.style.display == 'none'){
+        //         hidden.style.display = 'block';
+        //     }
+        //     else{
+        //         hidden.style.display = 'none';
+        //     }
+        // }
+    </script>
+</body>
+</html>

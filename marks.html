@@ -1,0 +1,96 @@
+<!-- accept 7 subject marks of any studentvfind division,percent and highest marks among all sub -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        text-align: center;     
+   }
+    </style> -->
+</head>
+<body>
+    <form>
+        <table style="width: 50%;">
+            <tr>
+                <th>S.N.</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Math</td>
+                <td><input type="text" id="value1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Science</td>
+                <td><input type="text" id="value2"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nepali</td>
+                <td><input type="text" id="value3"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>English</td>
+                <td><input type="text" id="value4"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Social</td>
+                <td><input type="text" id="value5"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>EPH</td>
+                <td><input type="text" id="value6"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Opt. Math</td>
+                <td><input type="text" id="value7"></td>
+            </tr>
+            <!-- <th>Total</th>
+            <td></td>
+            </td> -->
+        </table>
+        
+        <button type="submit" onclick="total()">Total</button><br><br>
+    <!-- <output id="result"> -->
+        
+    <!-- <input type="number" id="num">
+    <input type="number" id="value1">
+    <input type="number" id="value2">
+    <input type="number" id="value3">
+    <input type="number" id="value4">
+    <input type="number" id="value5">
+    <input type="number" id="value6">
+    <input type="number" id="value7"> -->
+    
+
+</form>
+<p id="result">total is :</p>
+    
+    <script>
+
+        function total(){
+        
+            var num1 = document.getElementById("value1").value;
+            var num2 = document.getElementById('value2').value;
+            var num3 = document.getElementById('value3').value;
+            var num4 = document.getElementById('value4').value;
+            var num5 = document.getElementById('value5').value;
+            var num6 = document.getElementById('value6').value;
+            var num7 = document.getElementById('value7').value;
+            var sum = parseInt(num1)+parseInt(num2)+parseInt(num3)+parseInt(num4)+parseInt(num5)+parseInt(num6)+parseInt(num7);
+            // console.log(sum);
+            document.getElementById("result").textContent= 'Sum is '+ sum ;
+            
+        }
+    </script>
+</body>
+</html>

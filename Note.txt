@@ -1,0 +1,37 @@
+
+
+Document and document
+When Document object is made, constructor method is called by default which gets the Document file ready.
+DOM representation or document is represented by Document.
+document is instantiated by Document.
+Document-> PARENT
+document->inherited from Document
+window and Document are global
+
+HTML DOM methods are actions you can perform (on HTML Elements).
+HTML DOM properties are values (of HTML Elements) that you can set or change.
+
+console.log() -> represents html string
+console.dir(document) -> shows object property method, lists,blah blah blah
+
+In the DOM, all HTML elements are defined as objects.
+The programming interface is the properties and methods of each object.
+A property is a value that you can get or set (like changing the content of an HTML element).
+A method is an action you can do (like add or deleting an HTML element).
+
+An HTMLCollection is a collection of document elements. 
+A NodeList is a collection of document nodes (element nodes, attribute nodes, and text nodes). 
+HTMLCollection items can be accessed by their name, id, or index number. NodeList items can only be accessed by their index number.
+
+child nodes-> returns nodes
+children-> returns HTML collection
+
+use tag selector only when tag is not required to be repeated such as body tag, head,...
+
+Math.random()=> generates random value from 0-99999999999999999
+Math.floor()=> gives single digit only(no point value)
+
+font-size 62.5% => 1rem = 10px, otherwise 1 rem = 16px
+
+background overrlap garera kaam garnu xa vane use backgroung(url); yeutai use garne  vaye chai use img
+flex-grow, flex-shrink, flex-basis used for reponsive

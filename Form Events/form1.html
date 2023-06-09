@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .form-group{
+            background: #031024;
+            font-size: 2rem;
+            margin: 0 auto;
+            width: 76%;
+            padding: 1rem 2rem;
+        }
+        .inputName{
+            border: none;
+            background: none;
+            border-bottom: 2px dotted #ccc;
+            margin-left: 1rem;
+            outline: none;
+            font-size: inherit; 
+            /* inheriting the font size of form-group */
+            color: #B1CEEC;
+        }
+        .btnSubmit{
+            margin-top: 1.5rem;
+            padding: 1rem 2.5rem;
+            font-size: inherit;
+            font-weight: bold;
+            font-family: inherit;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            background: #8dafe4;
+            color:#103877;
+            cursor: pointer;
+        }
+        .btnSubmit:hover{
+            background: #B1CEEC;
+        }
+        .display{
+            margin-top: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" class="form-group">
+        <label for="nameLabel">Your Name</label>
+        <input type="text" class="inputName" name="nameLabel" id="nameLabel">
+        <br><input type="submit" value="Sign-up" class="btnSubmit">
+        <p class="display">HEY</p>
+    </form>
+
+    <script>
+        var form = document.querySelector('.form-group');
+        var inputName = document.querySelector('.inputName');
+        var btnSubmit = document.querySelector('.btnSubmit');
+        var display = document.querySelector('.display');
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault;  //to not make the browser reload automatically after submission
+            display.textContent = inputName.value;
+        });
+
+        inputName.addEventListener('input', function(){
+            display.textContent = inputName.value;
+            
+        });
+
+        inputName.addEventListener('focus', function(event){
+            event.target.style.backgroundColor = 'green';            
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100% ;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: antiquewhite;
+        }
+        div{
+            height: inherit;
+            width: inherit;
+            border: 2px green solid;
+            margin: 1px;
+            padding: 1px;
+        }
+        p{
+            height: 300px;
+            width: 300px;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <p class="c box-1"></p>
+        <p class="c box-2"></p>
+        <p class="c box-3"></p>
+        <p class="c box-4"></p>
+    </div>
+    <div class="container-2">
+        <p class="c box-5"></p>
+        <p class="c box-6"></p>
+        <p class="c box-7"></p>
+        <p class="c box-8"></p>
+    </div>
+    <div class="container-3">
+        <p class="c box-9"></p>
+        <p class="c box-10"></p>
+        <p class="c box-11"></p>
+        <p class="c box-12"></p>
+    </div>
+    <!-- <div class="container-4">
+        <p class="c box-5"></p>
+        <p class="c box-6"></p>
+        <p class="c box-7"></p>
+        <p class="c box-8"></p>
+    </div> -->
+    
+    <script>
+        function color(){
+            var col = document.querySelector('.c');
+            var color = Math.floor(Math.random()*256);
+            col.style.backgroundColor = '#'+color;
+            
+        }
+    </script>
+    
+</body>
+</html>

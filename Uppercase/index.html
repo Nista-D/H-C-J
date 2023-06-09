@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* text-align: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .container{
+            border: 2px solid;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            padding: 10px;
+        }
+        .btn{
+            margin: 5px;
+            padding: 5px;
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(223, 243, 166);
+        }
+        .btn:hover{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="para">abcdef</p>
+    </div><br><br>
+    <button class="btn">Change</button>
+
+    <script>
+        var box = document.querySelector('.para');
+        var change = document.querySelector('.btn');
+
+        change.addEventListener('click', function(){
+            let vt = box.textContent.toUpperCase();
+            // console.log(vt);
+            box.textContent = vt;
+            // document.querySelector('.container').innerHTML = result;
+        })
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function getArea(width, height){ //regular function 
+            return width*height;
+        }
+        getArea(2,3);
+
+        var area= (function(width, height){ //immediately invoke function
+            return width*height;
+        }(3,5));
+
+        var area = function(width, height){ //anonymous function
+            return width*height;
+        }
+        area(2,3);
+
+        var area=(width, height)=>{ //arrow function
+            return width*height;
+        }
+    </script>
+</body>
+</html>

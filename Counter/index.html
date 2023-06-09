@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+            background:rgb(70, 100, 9);
+            border: 4px lightblue solid;
+            border-radius: 3px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        button{
+            height: 30px;
+            width: 60px;
+            margin: 6px;
+            margin-top: 150px;
+            border: 1px solid;
+            border-radius: 5px;   
+            font-size: 12px;
+            font-family: 'Times New Roman', Times, serif;   
+            color: rgb(12, 102, 12);
+        }
+        button:hover{
+            color: rgba(238, 235, 51, 0.842);
+        }
+        h2{
+            margin-top: 40px;
+            padding: 10px;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="show">0</h2>
+        <button class="btn add" onclick="increment()">+</button>
+        <button class="btn sub" onclick="decrement()">-</button>
+        <button class="btn re" onclick="reset()">RESET</button>
+    </div>
+    <script>
+        var count = 0;
+        var show = document.getElementsByClassName('show');
+        console.log(show);
+
+        function increment(){
+            count++;
+            show[0].textContent = count;
+        }
+        
+        function decrement(){
+            count = 0;
+            show[0].textContent= count;
+        }
+        function reset(){
+            count = 0;
+            show[0].textContent= count;
+        }
+
+        // var count = 0;
+        // var button = document.querySelectorAll('btn');
+        // for(var i=0;i<button.length;i++){
+        //     button[i].addEventListener('click',function(e){
+        //         e.target.className == 'btn inc'?(p.textContent = ++count)&&(p.style.color='green'):e.target.className == 'btn dec'&&         (count>0)&&(p.style.color='red')?p.textContent = --count:p.textContent= count=0
+        //     });
+        // }
+         
+
+    </script>
+
+
+</body>
+</html>

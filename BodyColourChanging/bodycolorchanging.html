@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <h2>Background Color <span class="color"> #f8f6f7</span></h2>
+    <script>
+        const hex = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"];
+        // const btn = document.querySelector(".btn");
+        const color = document.querySelector(".color");
+
+        window.addEventListener('click', () =>{
+            let hexColor = "#";
+            for(i=0;i<6;i++){
+                hexColor += hex[randomNumber()];
+            }
+
+            color.textContent = hexColor;
+            document.body.style.backgroundColor = hexColor;
+        });
+
+        const randomNumber =() => {
+            return Math.floor(Math.random() * hex.length);
+        }
+    </script> -->
+
+    <p> </p>
+    <!-- <div class="class"></div> -->
+    <script>
+        var alpha= ['A','B','C','D','E','F','G','H','I','J','K','L','M',
+                    'N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+        var p = document.querySelector('p');
+        // var color = document.querySelector('.color');
+        
+        function randomAlpha(){
+            for(i=0;i<alpha.length;i++){
+                p.textContent = alpha[i];
+                i = Math.floor(Math.random()*26);
+            }
+           
+        }
+        function randomColor(){
+            var body = document.querySelector('body');
+            var color = Math.floor(Math.random()*256).toString(16);
+            body.style.backgroundColor = '#' + color;
+        }
+        setInterval(randomAlpha, 1000);
+        setInterval(randomColor,1000)
+    </script>
+</body>
+</html>

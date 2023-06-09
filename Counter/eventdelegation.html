@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="order">
+        <li>Apple <button class="ed">Edit</button>  <button class="del">Delete</button></li><br>
+        <li>Banana <button class="ed">Edit</button>  <button class="del">Delete</button></li>
+    </ul>
+
+    <script>
+        var ul = document.querySelector('.order');
+        ul.addEventListener('click', Next);
+        function Next(e){
+            var target = e.target;
+            if(target.className == 'del'){
+                console.log('clicked');
+                li = target.parentNode;
+                console.log(ul);
+                li.remove();
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            color: rgb(68, 65, 65);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            background: azure;
+            display: flex;
+            justify-content: center;
+        }
+        /* h2{
+            margin: 1px;
+            padding: 1px;
+            text-align: center;
+            /* border-bottom: 1px solid rgb(194, 184, 184) ; */
+        */
+        .cont{
+            position: relative;
+            display: inline-block;
+        }
+        .display{
+            margin:4rem;
+            padding: 1rem;
+            border: 2px solid rgb(202, 240, 146);
+            background: rgb(209, 250, 148);
+            font-family: inherit;
+            font-size: inherit;
+            border: none;
+        }
+        .display:hover{
+            background-color: rgb(224, 243, 198);;
+        }
+        .dis1{
+            display:none ;
+            position: absolute;
+        }
+        .dis1 a{
+            color: rgb(51, 49, 49);
+            text-decoration:none;
+            display:block;
+        }
+        .dis1 a:hover{
+            background-color: rgb(213, 243, 243);
+        }
+        .cont:hover .dis1 {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <h2>Calendar</h2> -->
+    <div class="cont">
+        <button class="display">YEAR</button>
+        <div class="dis1">
+            <a href="#">2022</a>
+            <a href="#">2023</a>
+            <a href="#">2024</a>
+        </div>
+    </div>
+    <div class="cont">
+        <button class="display">MONTH</button>
+        <div class="dis1">
+            <a href="#">Jan</a>
+            <a href="#">Feb</a>
+            <a href="#">Mar</a>
+        </div>
+    </div>
+        
+    <div class="cont">
+        <button class="display">DAY</button>
+        <div class="dis1">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+        </div>
+    </div>
+       
+    <script>
+        var date = new getDate();
+        function
+    </script>
+    
+
+</body>
+</html>
